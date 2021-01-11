@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px dotted red; */
+}
+#container{
+    width: 900px;
+    height: 500px;
+}
+.row{
+    width: 100%;
+    height: 95%;
+}
+.row img{
+    margin: 20px 10px 20px 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid darkgray;
+}
+.reset{
+    /* display: inline-block; */
+    vertical-align: bottom;
+    margin-left: 45%;
+    height: 5%;
+    width: 10%;
+    border-radius: 8px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Library</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="head">This is our jQuery Playground</h1>
+    <button onclick="changeHeader()">Click Me!</button>
+
+    <script>
+        // function changeHeader(){
+        //     document.getElementById("head").innerHTML="This was clicked";
+        // };
+
+        $('button').click(function(){
+            $('#head').innerHTML="This was clicked";
+        });
+    </script>
+</body>
+</html>

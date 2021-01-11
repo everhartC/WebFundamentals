@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja to Cat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var path = 'img/',
+                imgs = ['cat0.png','cat1.png','cat2.png','cat3.png','cat4.png',
+                'ninja0.png','ninja1.png','ninja2.png','ninja3.png','ninja4.png'];
+
+            $('img').click(function() {
+                $(this).attr('src', path+imgs[Math.floor(Math.random()*imgs.length)]);
+                // $(this).attr('temp1', $(this).attr('src','img/' + imgs[i]));
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Click each picture until complete!</h1>
+    <img src='img/cat3.png' temp1='' temp=''><br>
+    <img src='img/ninja4.png' temp1='' temp=''><br>
+    <img src='img/cat2.png' temp1='' temp=''><br>
+    <img src='img/ninja1.png' temp1='' temp=''><br>
+    <img src='img/cat0.png' temp1='' temp=''><br>
+
+</body>
+</html>

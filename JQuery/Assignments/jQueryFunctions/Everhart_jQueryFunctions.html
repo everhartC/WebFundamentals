@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('.hidden').hide();
+            $('input').val("");
+            $(':checkbox:checked').removeAttr('checked');
+
+            $('#change').click(function() {
+                $('.container').css('background-color','red');
+            });
+
+            $('#show').click(function() {
+                $(this).closest('div').find('.hidden').show();
+                $('#show').hide();
+            });
+
+            $('#hide').click(function() {
+                $(this).closest('div').hide();
+                $('#show').show();
+            });
+
+            $('.toggle').click(function() {
+                $('#char0').toggle();
+            })
+
+            $('.slidetoggle').click(function(){
+                $('#char1').slideToggle("slow");
+            });
+
+            $('.fadeout').click(function(){
+                $('#char2').fadeOut();
+            });
+
+            $('#bhide').click(function(){
+                $('#char2').fadeIn();
+            });
+
+
+        });
+    </script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            /* outline: 2px dotted red; */
+        }
+
+        div, img, button{
+            border-radius: 4px;
+        }
+
+        .container{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .row{
+            width: 90%;
+            /* display: inline-block; */
+            background-color: white;
+            /* margin-left: 5%; */
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            min-height: 50px;
+            margin: 10px;
+            padding: 20px;
+        }
+        #change{
+            /* margin: 50px 0px 50px 25px; */
+            margin: 7px 0px 0px 0px;
+            float: left;
+            vertical-align: top;
+        }
+        .row h2{
+            float: left;
+            margin: 10px;
+        }
+        .row p{
+            width: 45%;
+            margin: auto;
+        }
+        .imagediv{
+            display: inline-block;
+            vertical-align: top;
+            width: 30%;
+        }
+
+        .imagediv button{
+            width: 200px;
+        }
+
+        button{
+            border: none;
+            padding: 10px 25px;
+            color: white;
+            margin: 10px 0px;
+            background: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <button id="change">Click me!</button>
+            <h2>Change Background</h2>
+            <p>Click the button to change the color of the background to red</p>
+        </div>
+        <div class="row">
+            <h1>Show() and Hide()</h1>
+            <p>Click the button to SHOW the HIDDEN stuff</p>
+            <div class="hidden">
+                <p> aaisdufnaiuaiunaiubnferguytbaefrdubdhyfluvnbauerybgkudfbhv</p>
+                <button id="hide">Hide</button>
+            </div>
+            <button id="show">Show</button>
+        </div>
+        <div class="row">
+            <h1>Toggle() & SlideToggle()</h1>
+            <div class="imagediv">
+                <img src="img/DSC02550.JPG" height="300" width="200" alt="charlie" class="img" id="char0">
+                <button class="toggle">Toggle</button>
+            </div>
+            <div class="imagediv">
+                <img src="img/DSC02551.JPG" height="300" width="200" alt="charlie" class="img" id="char1">
+                <button class="slidetoggle">Slide Toggle</button>
+            </div>
+            <div class="imagediv">
+                <img src="img/DSC02553.JPG" height="300" width="200" alt="charlie" class="img" id="char2">
+                <button class="fadeout">Fade Out</button>
+                <div class="hidden">
+                    <button id="bhide">Fade In</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

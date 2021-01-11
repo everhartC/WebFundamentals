@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover In and Out</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('img').hover(function() {
+                $(this).attr('blah',$(this).attr('src'));
+                $(this).attr('src',$(this).attr('alt'));
+            }, function() {
+                $(this).attr('src', $(this).attr('blah'));
+            });
+        });
+    </script>
+    <style>
+        img{
+            width: 300px;
+            height: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Click to see the other side of picture</h1>
+    <img src='imgs/img1.jpg' alt='imgs/img12.jpg' blah="">
+    <img src="imgs/img2.jpg" alt='imgs/img22.jpg' blah="">
+    <img src="imgs/img12.jpg" alt='imgs/img1.jpg' blah="">
+    <img src="imgs/img22.jpg" alt='imgs/img2.jpg' blah="">
+</body>
+</html>
