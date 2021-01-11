@@ -1,0 +1,15 @@
+#outerBox
+{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+#innerBox
+{
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    margin:10px 12px;
+    display: inline-block;
+    padding: 10px;
+}
