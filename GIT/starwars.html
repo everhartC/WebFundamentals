@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Welcome to Star Wars App</h1>
+    <button>Generate Star Wars Character</button>
+    <h4></h4>
+    <script>
+        var count = 0;
+        $('button').click(function(){
+            count++;
+            $.ajax({
+                url: `https://swapi.dev/api/people/${count}`,
+                success: function(res){
+                    $('h4').text(res.name);
+                }
+            })
+        })
+    </script>
+
+    
+</body>
+</html>
