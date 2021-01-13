@@ -1,0 +1,265 @@
+body *{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 1000px;
+    margin-left: 30px;
+}
+
+.navbar ul{
+    height: 60px;
+    width: 100%;
+    border-radius: 6px;
+    background-image: radial-gradient(white, #cdcdcd);
+    margin: 20px 0px 10px 0px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navbar ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+.navbar ul li,.searchbar{
+    display: inline-block;
+}
+
+.navbar_items{
+    height: 40px;
+    padding: 20px 20px 0px 20px;
+    border-right: 1px solid #e9eae9;
+    margin-right: 10px;
+}
+
+#accordance_logo{
+    height: 60px;
+    width: 75px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 2px;
+}
+
+.searchbar{
+    vertical-align: top;
+    padding: 10px 0px 0px 30px;
+    margin: 5px 0px 0px 50px;
+}
+
+.searchbar input, label{
+    vertical-align: top;
+    border-radius: 10px 0px 0px 10px;
+    border: transparent;
+    width: 180px;
+    height: 30px;
+    margin-right: -3px;
+}
+
+#search{
+    background-color: transparent;
+    border: transparent;
+}
+
+#search img{
+    height: 32px;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: -1px;
+}
+
+.accordanceBig{
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.main_page img, nav{
+    vertical-align: top;
+}
+
+.main_tabs ul{
+    vertical-align: top;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(#545452, #363636);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.main_tabs ul li{
+    display: inline-block;
+    color: #8abed2;
+    font-size: 14px;
+    padding-left: 10px;
+    margin: 10px 5px 0px 5px;
+}
+
+.main_tabs ul li:first-child{
+    color: white;
+}
+
+hr{
+    display: inline-block;
+    width: 25px;
+    transform: rotate(-50deg) translateX(4px);
+    margin-left: 10px;
+    border-color: lightslategray;
+}
+
+.bottom_container{
+    height: 550px;
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #f4f6f5;
+    background-color: #f4f6f5;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.discover{
+    border: 2px solid #e9eae9;
+    border-right: transparent;
+    border-left: transparent;
+    padding: 30px 10px 10px 10px;
+    width: 98%;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 20px;
+    height: 70px;
+}
+
+.discover h2{
+    display: inline-block;
+    color: #a9a9a9;
+    font-weight: normal;
+    font-size: 36px;
+    border-right: 2px solid #e9eae9;
+    height: 45px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.discover button{
+    background-image: linear-gradient(#5794ba, #416f8e);
+    margin-left: 20px;
+    color: white;
+    border-style: none;
+    font-size: 24px;
+    padding: 10px 100px 10px 20px;
+    border-radius: 8px; 
+}
+
+.sections{
+    display: inline-block;
+    width: 230px;
+    height: 325px;
+    vertical-align: top;
+    margin: 20px 0px 0px 10px;
+    padding-bottom: -40px;
+}
+
+.sections header img, h4{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 0px 0px 10px;
+}
+
+.sections h4{
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.content_icon{
+    width: 40px;
+    height: 40px;
+}
+
+.sections:not(:nth-child(5)){
+    border-right: 1px solid #e9eae9;
+    
+}
+
+.sections p{
+    vertical-align: top;
+    font-size: 14px;
+    margin: 10px 0px 0px 12px;
+}
+
+.preview{
+    height: 140px;
+    width: 200px;
+    margin: 20px 0px 0px 10px;
+    vertical-align: top;
+}
+
+.actionbutton{
+    display: inline-block;
+    vertical-align: bottom;
+    border-style: none;
+    color: white;
+    background: linear-gradient(#64b8f3,#5ca1d6);
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    margin: 10px 0px 0px 60px;
+
+}
+
+.emptybox{
+    height: 70px;
+    width: 100%;
+    border: 2px solid #e9eae9;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.bottomnav{
+    border-bottom: 1px solid #e9eae9;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+.bottomnav nav{
+    display: inline-block;
+    width: 140px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+h5{
+    border-bottom: 1px solid #e9eae9;
+    margin-top: 30px;
+    padding: 0px 60px 10px 0px;
+    font-size: 14px;
+}
+
+.bottomnav nav ul li{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+footer p, a{
+    margin: 20px 0px 20px 0px;
+    display: inline-block;
+    font-size: 9px;
+}
+
+a{
+    color: #2376c8;
+}
+
+.sections .p1{
+    margin-bottom: 16px;
+}
+
+.sections .p4{
+    margin-bottom: 16px;
+}
